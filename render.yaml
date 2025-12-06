@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: telegram-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8553356873:AAFVMlCRmmGbJA0t_iNM5z5ij_MLhCFsagY
